@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:4.2
+    container_name: financial_tracker_mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro # mounts a file named mongo-init.js to the /docker-entrypoint-initdb.d directory inside the container. This file can be used to run initialization scripts when the container starts up.
+    environment:
+      MONGO_INITDB_DATABASE: financial_tracker_test
