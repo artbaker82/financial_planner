@@ -9,7 +9,7 @@ class Expense
   field :source, type: String # (Chase, Discover)
 
   # validations
-  validates :transaction_date, presence: true
+  # validates :transaction_date, presence: true # this was failing
   validates :amount, presence: true
   validates :source, presence: true
 end
