@@ -21,7 +21,7 @@ GEM
       ruby2_keywords (~> 0.0.5)
     ruby2_keywords (0.0.5)
     shale (0.9.0)
-    smarter_csv (1.8.3)
+    smarter_csv (1.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
 
@@ -32,7 +32,7 @@ DEPENDENCIES
   mongo (~> 2)
   mongoid (~> 8.0.2)
   shale (~> 0.9.0)
-  smarter_csv (~> 1.8, >= 1.8.3)
+  smarter_csv (= 1.4)
 
 BUNDLED WITH
    2.3.3

@@ -1,7 +1,7 @@
 require 'mongoid'
 require 'smarter_csv'
 
-Mongoid.load!(File.join(File.dirname(__FILE__), 'config', 'mongoid.yml')) # need to change path
+# Mongoid.load!(File.join(File.dirname(__FILE__), 'config', 'mongoid.yml')) # need to change path
 
 class CsvLoader
   attr_reader :path_to_data, :header_mapping, :source
